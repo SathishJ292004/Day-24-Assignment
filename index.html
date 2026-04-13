@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title Button</title>
+</head>
+<body>
+    <button onclick="Click()">Click me</button>
+    <br><br>
+    <input type="text" id="button" placeholder="Enter Your Name">
+    <p id="lucky"></p>
+    <button id="miss">OK</button>
+    <script>
+        function Click() {
+            alert("Welcome");
+        }
+        let input = document.getElementById("button");
+        let p = document.getElementById("lucky");
+        input.addEventListener("input", function () { p.textContent = input.value; });
+        let btn = document.getElementById("miss");
+        btn.addEventListener("click", function () { alert("Verified Successfully") });
+    </script>
+</body>
+</html>
